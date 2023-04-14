@@ -1,0 +1,47 @@
+[paper]
+identifier = 15706789
+paper_type = "longitudinal survey"
+
+[[graph.entities]]
+index = 1
+token = "race"
+var_type = "categorical"
+domain = "{'black', 'white'}"
+context = "control"
+
+[[graph.entities]]
+index = 2
+token = "gender"
+var_type = "categorical"
+domain = "{'male', 'female'}"
+context = "control"
+
+[[graph.entities]]
+index = 3
+token = "age of first alcohol use"
+var_type = "categorical"
+domain = "{'<=13', '14', '15', '16', '17', '18', '19', '20', '>=21'}"
+context = "control"
+
+[[graph.entities]]
+index = 4
+token = "reported family history of alcohol use"
+var_type = "categorical"
+domain = "{'+', '-'}"
+context = "control"
+
+[[graph.entities]]
+index = 5
+token = "AUDADIS"
+var_type = "categorical"
+domain = "{'+', '-'}"
+context = "outcome"
+
+[graph]
+edges = [
+  [1, 5],
+  [2, 5],
+  [3, 5],
+  [4, 5],
+]
+
